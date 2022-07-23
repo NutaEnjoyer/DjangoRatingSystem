@@ -1,0 +1,12 @@
+{% extends "basic.html" %}
+{% block content %}
+{% with person as p %}
+<div>
+<h2>{{p.name}}</h2>
+    <h4>Дата публикации: </h4><a>{{p.pub_date}}</a>
+    <h4>Дата изменения: </h4><a>{{p.change_date}}</a>
+    <h4>Scum: </h4><a>{{p.is_scum}}</a>
+
+</div>
+{% endwith %}
+{% endblock %}

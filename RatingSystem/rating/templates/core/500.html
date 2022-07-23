@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Custom 500</h1>
+  <p>Страница вызывает ошибку сервера</p>
+  <a href="{% url 'rating:index' %}"> Идите на главную</a>
+{% endblock %}
